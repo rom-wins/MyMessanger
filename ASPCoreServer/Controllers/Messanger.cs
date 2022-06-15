@@ -28,7 +28,6 @@ namespace ASPCoreServer.Controllers
         {
             if (msg == null)
             {
-                Console.WriteLine(213);
                 return BadRequest();
             }
 
