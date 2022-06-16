@@ -31,7 +31,7 @@ namespace MyApp
             //RusAl<Privet>: 14.06.2022 16:29:04
 
             MessageID = 1;
-            Console.WriteLine("Введите ваше имя:");
+            Console.Write("Введите ваше имя: ");
             //UserName = "Роман";
             UserName = Console.ReadLine();
             string MessageText = "";
