@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleCli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPCoreServer", "ASPCoreServer\ASPCoreServer.csproj", "{6CD738B7-2F2C-40E3-879B-7D40A98DAF19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFromsClient", "WindowsFromsClient\WindowsFromsClient\WindowsFromsClient.csproj", "{B2C7FB68-5EED-4779-8A8F-D4A86AF14771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6CD738B7-2F2C-40E3-879B-7D40A98DAF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD738B7-2F2C-40E3-879B-7D40A98DAF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD738B7-2F2C-40E3-879B-7D40A98DAF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C7FB68-5EED-4779-8A8F-D4A86AF14771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C7FB68-5EED-4779-8A8F-D4A86AF14771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C7FB68-5EED-4779-8A8F-D4A86AF14771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C7FB68-5EED-4779-8A8F-D4A86AF14771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
