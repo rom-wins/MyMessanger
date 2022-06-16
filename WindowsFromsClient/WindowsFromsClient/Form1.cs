@@ -21,5 +21,11 @@ namespace WindowsFromsClient
         {
 
         }
+
+        private void SendButton_Click(object sender, EventArgs e)
+        {
+            MessageTB.Text = UserNameTB.Text;
+
+        }
     }
 }

@@ -28,53 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.SendButton = new System.Windows.Forms.Button();
+            this.MessagesLB = new System.Windows.Forms.ListBox();
+            this.UserNameTB = new System.Windows.Forms.TextBox();
+            this.MessageTB = new System.Windows.Forms.TextBox();
+            this.UserNameLabel = new System.Windows.Forms.Label();
+            this.MessageLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // button1
+            // SendButton
             // 
-            this.button1.Location = new System.Drawing.Point(650, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 67);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SendButton.Location = new System.Drawing.Point(650, 371);
+            this.SendButton.Name = "SendButton";
+            this.SendButton.Size = new System.Drawing.Size(124, 67);
+            this.SendButton.TabIndex = 0;
+            this.SendButton.Text = "Отправить";
+            this.SendButton.UseVisualStyleBackColor = true;
+            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
-            // listBox1
+            // MessagesLB
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(26, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(748, 308);
-            this.listBox1.TabIndex = 1;
+            this.MessagesLB.FormattingEnabled = true;
+            this.MessagesLB.ItemHeight = 16;
+            this.MessagesLB.Location = new System.Drawing.Point(26, 27);
+            this.MessagesLB.Name = "MessagesLB";
+            this.MessagesLB.Size = new System.Drawing.Size(748, 276);
+            this.MessagesLB.TabIndex = 1;
             // 
-            // textBox1
+            // UserNameTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 352);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 22);
-            this.textBox1.TabIndex = 2;
+            this.UserNameTB.Location = new System.Drawing.Point(26, 341);
+            this.UserNameTB.Name = "UserNameTB";
+            this.UserNameTB.Size = new System.Drawing.Size(363, 22);
+            this.UserNameTB.TabIndex = 2;
             // 
-            // textBox2
+            // MessageTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(26, 406);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(597, 22);
-            this.textBox2.TabIndex = 3;
+            this.MessageTB.Location = new System.Drawing.Point(26, 406);
+            this.MessageTB.Name = "MessageTB";
+            this.MessageTB.Size = new System.Drawing.Size(597, 22);
+            this.MessageTB.TabIndex = 3;
+            // 
+            // UserNameLabel
+            // 
+            this.UserNameLabel.AutoSize = true;
+            this.UserNameLabel.Location = new System.Drawing.Point(23, 322);
+            this.UserNameLabel.Name = "UserNameLabel";
+            this.UserNameLabel.Size = new System.Drawing.Size(73, 16);
+            this.UserNameLabel.TabIndex = 4;
+            this.UserNameLabel.Text = "User name";
+            // 
+            // MessageLabel
+            // 
+            this.MessageLabel.AutoSize = true;
+            this.MessageLabel.Location = new System.Drawing.Point(23, 387);
+            this.MessageLabel.Name = "MessageLabel";
+            this.MessageLabel.Size = new System.Drawing.Size(95, 16);
+            this.MessageLabel.TabIndex = 4;
+            this.MessageLabel.Text = "Your message";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.MessageLabel);
+            this.Controls.Add(this.UserNameLabel);
+            this.Controls.Add(this.MessageTB);
+            this.Controls.Add(this.UserNameTB);
+            this.Controls.Add(this.MessagesLB);
+            this.Controls.Add(this.SendButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -85,10 +115,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button SendButton;
+        private System.Windows.Forms.ListBox MessagesLB;
+        private System.Windows.Forms.TextBox UserNameTB;
+        private System.Windows.Forms.TextBox MessageTB;
+        private System.Windows.Forms.Label UserNameLabel;
+        private System.Windows.Forms.Label MessageLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
